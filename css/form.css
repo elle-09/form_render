@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:25px;
+}
+
+form{
+    width:90%;
+    margin:auto;
+}
+
+fieldset{
+    margin-bottom:15px;
+    padding:20px;
+}
+
+legend{
+    font-size:18px;
+}
+
+/* Each row */
+fieldset div{
+    margin-bottom:15px;
+}
+
+/* Left column */
+fieldset div > label:first-child{
+    display:inline-block;
+    width: 180px;      /* Fixed width for every left label */
+    vertical-align:top;
+    font-size:18px;
+}
+
+/* Text boxes */
+input[type=text],
+input[type=email],
+input[type=number]{
+    width:320px;
+    height:30px;
+}
+
+/* Category */
+select{
+    width:190px;
+    height:35px;
+}
+
+/* Description */
+textarea{
+    width:800px;
+    height:160px;
+}
+
+/* Keep checkbox/radio labels close to their buttons */
+input[type=checkbox] + label,
+input[type=radio] + label{
+    display:inline;
+    width:auto;
+    margin-right:15px;
+}
+
+input[type=submit]{
+    padding:12px 20px;
+    font-size:18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: blue;
+}

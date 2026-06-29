@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Render</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <form action="https://teach-backend-fawn.vercel.app/api/product" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>General Info</legend>
+            <div>
+            <label for="itemName">Item Name</label>
+            <input
+                   type="text"
+                   id = "itemName"
+                   name="itemName"
+            />
+            </div>
+            <div>
+            <label for="itemDescription">Description</label>
+                <textarea
+                id="itemDescription"
+                name="itemDescription"
+                cols="20"
+                rows="5"></textarea>
+            </div>
+            <div>
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="0">notSpecified</option>
+                    <option value="1">consumption</option>
+                    <option value="2">household</option>
+                    <option value="3">electronic</option>
+                    <option value="4">gadget</option>
+
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Misc.</legend>
+            <div>
+            <label for="inventoryAmount">Inventory Amount</label>
+            <input
+                   type="number"
+                   id = "inventoryAmount"
+                   name="inventoryAmount"
+            />
+            </div>
+            <div>
+            <label for="listPrice">List Price</label>
+            <input
+                   type="number"
+                   id = "listPrice"
+                   name="listPrice"
+            />
+            </div>
+            <div>
+                <label for="availableStore">Available Stores</label>
+                <input type="checkbox" id="c1" name="availableStore[]"value="Bangkok"/>
+                <label for="c1">Bangkok</label>
+                <input type="checkbox" id="c2" name="availableStore[]"value="Pattaya"/>
+                <label for="c2">Pattaya</label>
+                <input type="checkbox" id="c3" name="availableStore[]"value="Phuket"/>
+                <label for="c3">Phuket</label>
+            </div>
+            <div>
+                <label for="status">Available Stores</label>
+                 <input type ="radio" id="r1" name="status" value="Active"/>
+                 <label for="r1">Active</label> 
+                <input type ="radio" id="r2" name="status" value="Inactive"/>
+                 <label for="r2">Inactive</label> 
+            </div>
+           </fieldset>
+           <fieldset>
+             <legend>Staff</legend>
+             <div>
+             <label for="staffEmail">Staff Email</label>
+             <input
+                   type="email"
+                   id = "staffEmail"
+                   name="staffEmail"
+             />
+             </div>
+           </fieldset>
+            
+            <div style = "text-align: right;">    
+                   <input type = "submit"
+                   name="submit"
+                   value="Submit Form"/>
+            </div>
+        </form>
+        <script></script>
+    </body>
+</html>
